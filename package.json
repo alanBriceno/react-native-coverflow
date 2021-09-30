@@ -26,19 +26,19 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.1",
-    "babel-jest": "^19.0.0",
+    "babel-jest": "^27.2.4",
     "babel-preset-react-native": "^1.9.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
-    "jest": "^19.0.2",
+    "jest": "^27.2.4",
     "rimraf": "^2.6.1"
   },
   "peerDependencies": {
-    "react": "^15.0.0 || ^16.0.0-beta",
-    "react-native": "^0.40.0"
+    "react": "17.0.2",
+  	"react-native": "0.65.1"
   },
   "dependencies": {
     "prop-types": "^15.6.0"
