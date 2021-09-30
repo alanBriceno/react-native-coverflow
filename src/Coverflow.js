@@ -69,7 +69,7 @@ class Coverflow extends Component {
     };
   }
 
-  componentDidMount() {
+  UNSAFE_componentWillMount() {
     const { scrollX, sensitivity } = this.state;
     this.scrollListener = scrollX.addListener(this.onScroll);
 
