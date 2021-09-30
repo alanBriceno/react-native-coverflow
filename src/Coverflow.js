@@ -104,6 +104,7 @@ class Coverflow extends Component {
           Animated.decay(scrollX, {
             velocity,
             deceleration,
+            useNativeDriver: true,
           }).start(({ finished }) => {
             // Only snap to finish if the animation was completed gracefully
             if (finished) {
@@ -180,6 +181,7 @@ class Coverflow extends Component {
 
       Animated.spring(scrollX, {
         toValue: finalPos,
+        useNativeDriver: true,
       }).start();
     }
   }
