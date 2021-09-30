@@ -69,7 +69,7 @@ class Coverflow extends Component {
     };
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const { scrollX, sensitivity } = this.state;
     this.scrollListener = scrollX.addListener(this.onScroll);
 
@@ -118,7 +118,7 @@ class Coverflow extends Component {
     });
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     // Check if the children property changes on addition / removal
     const sensitivity = convertSensitivity(nextProps.sensitivity);
     const selection = clamp(this.state.selection, 0, Children.count(nextProps.children) - 1);
